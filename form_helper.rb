@@ -86,14 +86,14 @@ end
 
 Benchmark.ips do |x|
   x.report("Master: array.length == 5") {
-    record = [:admin, :document, :comment, :commentable, :image]
+    record = [:admin, :document, :comment, :commentable, :edit]
 
     object = record.is_a?(Array) ? record.last : record
     raise ArgumentError, "First argument in form cannot contain nil or be empty" unless object
   }
 
   x.report("PR: array.length == 5") {
-    record = [:admin, :document, :comment, :commentable, :image]
+    record = [:admin, :document, :comment, :commentable, :edit]
 
     record_is_array = record.is_a?(Array)
     object = record_is_array ? record.last : record

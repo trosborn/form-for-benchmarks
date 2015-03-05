@@ -1,4 +1,3 @@
-# form-for-benchmarks
 Setup:
 
 gem install "benchmarks-ips"

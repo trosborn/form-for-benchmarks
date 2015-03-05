@@ -6,4 +6,4 @@ Then run script from command line:
 
 ruby form_for.rb
 
-Results will vary dependant on Ruby version
+Results will vary dependent on Ruby version

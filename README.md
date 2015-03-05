@@ -4,6 +4,6 @@ gem install "benchmarks-ips"
 
 Then run script from command line:
 
-ruby form_for.rb
+ruby form_helper.rb
 
 Results will vary dependent on Ruby version

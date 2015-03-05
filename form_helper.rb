@@ -14,8 +14,8 @@ Benchmark.ips do |x|
     record_is_array = record.is_a?(Array)
     object = record_is_array ? record.last : record
 
-    if record_is_array && record.any?(&:nil?)
-      raise ArgumentError, "First argument in form cannot contain nil or be empty" unless object
+    if record_is_array && record.any?(&:nil?) || object.nil?
+      raise ArgumentError, "First argument in form cannot contain nil or be empty"
     end
   }
   x.compare!

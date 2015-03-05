@@ -1,2 +1,9 @@
-# form-for-benchmarks
-Benchmarks for PR #18963 in Rails
+Setup:
+
+gem install "benchmarks-ips"
+
+Then run script from command line:
+
+ruby form_for.rb
+
+Results will vary dependent on Ruby version
